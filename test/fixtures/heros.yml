@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hero_id: MyString
+  name: MyString
+  aka: MyString
+  alignment: MyString
+  powerstats: MyString
+  smarts: MyString
+  muscle: MyString
+  speed: MyString
+  sstamina: MyString
+  power: MyString
+  combat_skills: MyString
+  work: MyString
+  connections: MyString
+  family: MyString
+  allImgs: MyString
+  xsImg: MyString
+  smImg: MyString
+  mdImg: MyString
+  lgImg: MyString
+
+two:
+  hero_id: MyString
+  name: MyString
+  aka: MyString
+  alignment: MyString
+  powerstats: MyString
+  smarts: MyString
+  muscle: MyString
+  speed: MyString
+  sstamina: MyString
+  power: MyString
+  combat_skills: MyString
+  work: MyString
+  connections: MyString
+  family: MyString
+  allImgs: MyString
+  xsImg: MyString
+  smImg: MyString
+  mdImg: MyString
+  lgImg: MyString
