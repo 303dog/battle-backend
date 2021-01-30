@@ -61,7 +61,7 @@ MODELS
       name
       aka
       alignment
-      powerstats{}
+      powerstats
       smarts
       muscle
       speed
