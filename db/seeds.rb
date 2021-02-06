@@ -9,5 +9,9 @@ require "httparty"
 response = HTTParty.get("https://akabab.github.io/superhero-api/api/all.json")
 print response[0]
 response.each do |hero|
-    Hero.create(hero_id: hero["id"], name: hero["biography"]["fullName"], aka: hero["biography"]["aliases"], alignment: hero["biography"]["alignment"], powerstats: ["powerstats"], smarts: hero["powerstats"]["intelligence"], muscle: hero["powerstats"]["strength"], speed: hero["powerstats"]["speed"], stamina: hero["powerstats"]["durability"], power: hero["powerstats"]["power"], combat_skills: hero["powerstats"]["combat"], work: hero["work"]["occupation"], connections: hero["connections"]["groupAffiliation"], family: hero["connections"]["relatives"], allImgs:["images"], xsImg: hero["images"]["xs"], smImg: hero["images"]["sm"], mdImg: hero["images"]["md"], lgImg: hero["images"]["lg"])
+
+    Hero.create(hero_id: hero["id"], name: hero["biography"]["fullName"], aka: hero["biography"]["aliases"], alignment: hero["biography"]["alignment"], smarts: hero["powerstats"]["intelligence"], muscle: hero["powerstats"]["strength"], speed: hero["powerstats"]["speed"], stamina: hero["powerstats"]["durability"], power: hero["powerstats"]["power"], combat_skills: hero["powerstats"]["combat"], xsImg: hero["images"]["xs"], smImg: hero["images"]["sm"], mdImg: hero["images"]["md"], lgImg: hero["images"]["lg"])
 end
+
+Fighter.create(hero_id:7, winner_id: 1, loser_id: 5)
+Fighter.create(hero_id:11, winner_id: 3, loser_id: 1)
