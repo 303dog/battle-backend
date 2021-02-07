@@ -15,3 +15,8 @@ end
 
 Fighter.create(hero_id:7, winner_id: 1, loser_id: 5)
 Fighter.create(hero_id:11, winner_id: 3, loser_id: 1)
+
+
+
+User.create(username: "Mo", password: "password")
+User.create(username: "littlePig33", password: "password")

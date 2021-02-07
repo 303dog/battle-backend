@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_04_235003) do
+ActiveRecord::Schema.define(version: 2021_02_07_181322) do
 
   create_table "fighters", force: :cascade do |t|
-    t.integer "winner_id"
-    t.integer "loser_id"
+    t.integer "wins"
+    t.integer "losses"
     t.integer "hero_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -35,6 +35,13 @@ ActiveRecord::Schema.define(version: 2021_02_04_235003) do
     t.string "smImg"
     t.string "mdImg"
     t.string "lgImg"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

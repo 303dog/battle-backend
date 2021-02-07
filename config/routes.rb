@@ -3,7 +3,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :heros
       resources :fighters
-      resources :battles
+      resources :users
+      
     end
   end
   
