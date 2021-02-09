@@ -10,13 +10,8 @@ response = HTTParty.get("https://akabab.github.io/superhero-api/api/all.json")
 print response[0]
 response.each do |hero|
 
-    Hero.create(hero_id: hero["id"], name: hero["biography"]["fullName"], aka: hero["biography"]["aliases"], alignment: hero["biography"]["alignment"], smarts: hero["powerstats"]["intelligence"], muscle: hero["powerstats"]["strength"], speed: hero["powerstats"]["speed"], stamina: hero["powerstats"]["durability"], power: hero["powerstats"]["power"], combat_skills: hero["powerstats"]["combat"], xsImg: hero["images"]["xs"], smImg: hero["images"]["sm"], mdImg: hero["images"]["md"], lgImg: hero["images"]["lg"])
+    Hero.create(wins: 2, losses: 2, hero_id: hero["id"], name: hero["biography"]["fullName"], aka: hero["biography"]["aliases"], alignment: hero["biography"]["alignment"], smarts: hero["powerstats"]["intelligence"], muscle: hero["powerstats"]["strength"], speed: hero["powerstats"]["speed"], stamina: hero["powerstats"]["durability"], power: hero["powerstats"]["power"], combat_skills: hero["powerstats"]["combat"], xsImg: hero["images"]["xs"], smImg: hero["images"]["sm"], mdImg: hero["images"]["md"], lgImg: hero["images"]["lg"])
 end
 
-Fighter.create(hero_id:7, winner_id: 1, loser_id: 5)
-Fighter.create(hero_id:11, winner_id: 3, loser_id: 1)
-
-
-
-User.create(username: "Mo", password: "password")
-User.create(username: "littlePig33", password: "password")
+#Fighter.create(hero_id:7, wins: 1, losses: 5)
+#Fighter.create(hero_id:11, wins: 3, losses: 1)

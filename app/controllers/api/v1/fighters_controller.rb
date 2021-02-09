@@ -9,8 +9,6 @@ class Api::V1::FightersController < ApplicationController
     def show
         @fighter = Fighter.find_by_id(params[:id])
         render json: @fighter
-        #fighter_json= FighterSerializer.new(@fighter).serialized_json
-        #render json: fighter_json
     end
 
     def new
@@ -38,7 +36,7 @@ class Api::V1::FightersController < ApplicationController
     private
 
     def fig_params
-        params.require(:hero_id).permit(:winner_id, :loser_id)
+        params.require(:hero_id).permit(:wins, :losses)
     end
 
     def set_fighter

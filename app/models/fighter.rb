@@ -1,6 +1,6 @@
 class Fighter < ApplicationRecord
     
-    has_many :heros,  foreign_key: :hero_id
+    belongs_to :hero,  foreign_key: :hero_id
    
     
 
