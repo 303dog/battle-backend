@@ -17,7 +17,6 @@ class Api::V1::FightersController < ApplicationController
 
     def create
         @fighter = Fighter.new(fig_params)
-        byebug;
         if @fighter.save
             render json: @fighter, status: :created, location: @fighter
         else
