@@ -1,6 +1,5 @@
 class Api::V1::HerosController < ApplicationController
   
-    # GET /heros
    def index
      @heros = Hero.all
      render json: @heros
@@ -8,6 +7,11 @@ class Api::V1::HerosController < ApplicationController
 
    def new
       @hero = Hero.new(hero_params)
+   end
+
+   def show 
+      set_hero
+      render json: @hero
    end
 
    def update
@@ -33,7 +37,7 @@ class Api::V1::HerosController < ApplicationController
    end
 
    def update_params
-      @hero.increment(:wins, +1).save
+      @hero.increment(:wins).save
    end
 
    def set_hero

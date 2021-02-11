@@ -13,5 +13,3 @@ response.each do |hero|
     Hero.create(wins: 2, losses: 2, hero_id: hero["id"], name: hero["biography"]["fullName"], aka: hero["biography"]["aliases"], alignment: hero["biography"]["alignment"], smarts: hero["powerstats"]["intelligence"], muscle: hero["powerstats"]["strength"], speed: hero["powerstats"]["speed"], stamina: hero["powerstats"]["durability"], power: hero["powerstats"]["power"], combat_skills: hero["powerstats"]["combat"], xsImg: hero["images"]["xs"], smImg: hero["images"]["sm"], mdImg: hero["images"]["md"], lgImg: hero["images"]["lg"])
 end
 
-#Fighter.create(hero_id:7, wins: 1, losses: 5)
-#Fighter.create(hero_id:11, wins: 3, losses: 1)

@@ -12,13 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2021_02_04_235003) do
 
-  create_table "fighters", force: :cascade do |t|
-    t.integer "wins"
-    t.integer "losses"
-    t.integer "hero_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
 
   create_table "heros", force: :cascade do |t|
     t.integer "wins"

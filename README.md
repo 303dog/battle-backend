@@ -61,7 +61,6 @@ MODELS
       name
       aka
       alignment
-      powerstats
       smarts
       muscle
       speed
@@ -69,9 +68,6 @@ MODELS
       power
       combat_skills
       appearance
-      work
-      connections
-      family
       xsImg
       smImg
       mdImg
